@@ -133,8 +133,9 @@ class FormatSheet:
         for coluna in colluns_camel:
             self.data_frame[coluna] = self.data_frame[coluna].apply(
                 lambda x: unidecode(x) if isinstance(x, str) else x)
-        self.data_frame['PRODUTO_PPB'] = self.data_frame['PRODUTO_PPB'].map(
+        self.data_frame['PRODUTO_PPB'] = self.data_frame['PRODUTO'].map(
             product_mapping).fillna(self.data_frame['PRODUTO_PPB'])
+        del self.data_frame['PRODUTO']
 
         self.data_frame['GRUPO_BANDEIRA_PPB'] = self.data_frame['BANDEIRA'].map(
             brand_mapping).fillna(self.data_frame['GRUPO_BANDEIRA_PPB'])

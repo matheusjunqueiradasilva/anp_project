@@ -6,7 +6,7 @@ caminho_unicode = caminho_bytes.decode('utf-8')
 caminho_formatado = caminho_unicode.replace('/', '\\')
 
 createe_colluns = ["UF_PPB", "GRUPO_BANDEIRA_PPB", "POSTO_ANP",
-                   "CODIGO_FONTE_PESQUISA", "FONTE_PESQUISA", "PREÇO_MÉDIO_COMPRA", "GRP_PROD_NV_4", "GRP_PROD_NV_3"]
+                   "CODIGO_FONTE_PESQUISA", "FONTE_PESQUISA", "PREÇO_MÉDIO_COMPRA", "GRP_PROD_NV_4", "GRP_PROD_NV_3","PRODUTO_PPB"]
 
 colluns_ordem = ["SEMANA", "MES", "BAIRRO_PPB", "ENDEREÇO_PPB", "MUNICÍPIO_PPB", "CNPJ_PPB", "ESTADO_PPB", "RAZÃO_SOCIAL_PPB", "UF_PPB", "GRP_PROD_NV_4", "GRP_PROD_NV_3",
                  "GRUPO_BANDEIRA_PPB", "BANDEIRA", "POSTO_ANP", "PRODUTO_PPB", "DATA_DA_COLETA", "CODIGO_FONTE_PESQUISA", "FONTE_PESQUISA", "PREÇO_MÉDIO_VENDA", "PREÇO_MÉDIO_COMPRA"]
@@ -19,7 +19,6 @@ colluns_rename = {'CNPJ': 'CNPJ_PPB',
                   'BAIRRO': 'BAIRRO_PPB',
                   'MUNICÍPIO': 'MUNICÍPIO_PPB',
                   'ESTADO': 'ESTADO_PPB',
-                  'PRODUTO': 'PRODUTO_PPB',
                   'UNIDADE DE MEDIDA': 'UNIDADE DE MEDIDA_PPB',
                   'PREÇO DE REVENDA': 'PREÇO_MÉDIO_VENDA',
                   'DATA DA COLETA': 'DATA_DA_COLETA'}
@@ -30,7 +29,7 @@ product_mapping = {
     'ETANOL': 'Etanol Hidratado Comum',
     'GASOLINA ADITIVADA': 'Gasolina C Aditivada',
     'GASOLINA COMUM': 'Gasolina C Comum',
-    'GLP': 'NULL',
+    'GLP': 'Glp',
     'GNV': 'Gas Natural Veicular'
 }
 
